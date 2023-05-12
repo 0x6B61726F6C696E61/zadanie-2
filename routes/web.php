@@ -7,6 +7,11 @@ use App\Http\Livewire\Show;
 use App\Http\Livewire\Destroy;
 use App\Http\Livewire\Update;
 
+use App\Http\Livewire\FullPages\CategoryList;
+use App\Http\Livewire\FullPages\Forms\CategoryCreate;
+use App\Http\Livewire\FullPages\Forms\CategoryDestroy;
+use App\Http\Livewire\FullPages\Forms\CategoryUpdate;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,6 +32,11 @@ Route::get('/przedmioty', AllItems::class);
 Route::get('/przedmioty/{id}/usun', Destroy::class);
 Route::get('/przedmioty/{id}/edytuj', Update::class);
 Route::get('/przedmioty/{id}', Show::class);
+
+Route::get('/kategorie', CategoryList::class);
+Route::get('/kategorie/dodaj-kategorie', CategoryCreate::class);
+Route::get('/kategorie/{id}/usun', CategoryDestroy::class);
+Route::get('/kategorie/{id}/edytuj', CategoryUpdate::class);
 
 /*
 Route::get('/przedmioty', function () {
