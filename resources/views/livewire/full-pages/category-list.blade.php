@@ -1,8 +1,8 @@
 <div>
     <div>
-    <form wire:submit.prevent>
-    <input class="rounded w-50 m-3 form-group form-group-lg" type='text' wire:model.lazy='input_value' placeholder="Wyszukaj po nazwie..." >
-    <button type='submit' class='btn btn-secondary'>Szukaj</button>
+    <form wire:submit.prevent='search'>
+    <input class="rounded w-50 mt-3 form-group" type='text' wire:model.lazy='input_value' placeholder="Wyszukaj po nazwie..." >
+    <button type='submit' class='btn btn-secondary ms-1'>Szukaj</button>
     </form>
     </div>
     

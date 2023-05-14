@@ -13,7 +13,12 @@ class CategoryList extends Component
     public $input_value;
     protected $paginationTheme='bootstrap';
 
+
+    public function search(){
+        $this->resetPage();
+    }
     
+
     public function render()
     {
         return view('livewire.full-pages.category-list', ['all_categories' => Category::where('name','like', $this->input_value.'%')->paginate(10),]);

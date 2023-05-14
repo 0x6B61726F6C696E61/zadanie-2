@@ -1,5 +1,4 @@
 <div class='text-white bg-dark'>
-    @if ($paginator->hasPages())
         <ul class='list-group list-group-horizontal'>
             @if ($paginator->onFirstPage())
                 <li class="list-group-item disabled bg-dark text-white border border-secondary">Poprzednia</li>
@@ -35,6 +34,5 @@
             @endif
 
         </ul>
-        @endif
 </div>
 
